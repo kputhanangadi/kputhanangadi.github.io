@@ -11,6 +11,7 @@ export default defineConfig({
   site: "https://github.com/kputhanangadi/kputhanangadi.github.io",
   integrations: [
     tailwind(),
+    mdx(),
     image({
       serviceEntryPoint: "@astrojs/image/sharp",
     }),
