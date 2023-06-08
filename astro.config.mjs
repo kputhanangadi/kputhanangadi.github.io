@@ -1,6 +1,6 @@
 import image from "@astrojs/image";
 import tailwind from "@astrojs/tailwind";
-import react from "@astrojs/react";
+// import react from "@astrojs/react";
 import mdx from "@astrojs/mdx";
 
 import { defineConfig } from "astro/config";
