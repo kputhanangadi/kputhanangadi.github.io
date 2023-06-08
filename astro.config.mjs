@@ -3,10 +3,10 @@ import tailwind from "@astrojs/tailwind";
 // import react from "@astrojs/react";
 import mdx from "@astrojs/mdx";
 
-import { defineConfig } from "astro/config";
+// import { defineConfig } from "astro/config";
 
 // https://astro.build/config
 export default defineConfig({
   site: "https://github.com/kputhanangadi/kputhanangadi.github.io",
-  integrations: [react(), tailwind(), mdx()],
+  integrations: [tailwind()],
 });
