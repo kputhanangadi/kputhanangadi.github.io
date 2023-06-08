@@ -5,33 +5,53 @@ import type { FooterLink } from "~/types";
 
 const links: Array<FooterLink> = [
   {
-    url: "https://astro.build/",
+    url: "https://kputhanangadi.com/",
     description: "Astro's official website",
     icon: "mdi:home",
   },
   {
-    url: "https://github.com/mhyfritz/astro-landing-page",
-    description: "View source on GitHub",
-    icon: "fa-brands:github-alt",
+    url: "https://www.linkedin.com/in/kputhanangadi/",
+    description: "LinkedIn",
+    icon: "fa-brands:linkedin",
   },
   {
-    url: "https://astro.build/chat",
+    url: "mailto:kputhanangadi@gmail.com",
+    description: "Email",
+    icon: "fa-regular:envelope",
+  },
+  {
+    url: "https://github.com/kputhanangadi",
+    description: "View source on GitHub",
+    icon: "fa-brands:github",
+  },
+  {
+    url: "https://www.youtube.com/channel/UCqoegKdWoKFkeXY1NSPQ8GQ",
+    description: "YouTube",
+    icon: "fa-brands:youtube",
+  },
+  {
+    url: "https://www.facebook.com/profile.php?id=100016601955990",
+    description: "Facebook",
+    icon: "fa-brands:facebook-square",
+  },
+  {
+    url: "https://discordapp.com/users/218854936539037697",
     description: "Astro on Discord",
     icon: "fa-brands:discord",
   },
   {
-    url: "https://twitter.com/astrodotbuild",
-    description: "Astro on Twitter",
-    icon: "fa-brands:twitter",
-  },
+    url: "https://open.spotify.com/user/n9cckn20twtn2b5a3zhu0bme7",
+    description: "Spotify",
+    icon: "fa-brands:spotify",
+  }
 ];
 ---
 
-<footer class="relative flex h-64 items-center justify-center">
+<footer class="relative flex h-60 items-center justify-center">
   <div class="absolute inset-0 overflow-hidden opacity-40">
     <HeroImage />
   </div>
-  <ul class="relative grid grid-cols-2 gap-4 sm:grid-cols-4">
+  <ul class="relative grid grid-cols-4 gap-7 sm:grid-cols-8 justify-center items-center">
     {
       links.map((link) => (
         <li>
@@ -47,3 +67,4 @@ const links: Array<FooterLink> = [
     }
   </ul>
 </footer>
+
