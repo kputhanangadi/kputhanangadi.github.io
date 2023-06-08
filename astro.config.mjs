@@ -8,5 +8,15 @@ import mdx from "@astrojs/mdx";
 // https://astro.build/config
 export default defineConfig({
   site: "https://github.com/kputhanangadi/kputhanangadi.github.io",
-  integrations: [tailwind()],
+  integrations: [
+    tailwind(),
+    image({
+      serviceEntryPoint: "@astrojs/image/sharp",
+    }),
+  ],
+  vite: {
+    ssr: {
+      external: ["svgo"],
+    },
+  },
 });
