@@ -5,67 +5,67 @@ import type { CompatibilityItem } from "~/types";
 
 const frameworks: Array<CompatibilityItem> = [
   {
-    title: "React",
-    icon: "frameworks/react",
+    title: "Python",
+    icon: "fa-brands:python",
     url: "https://reactjs.org/",
   },
   {
-    title: "Preact",
-    icon: "frameworks/preact",
+    title: "Java",
+    icon: "fa-brands:java",
     url: "https://preactjs.com/",
   },
   {
-    title: "Svelte",
-    icon: "frameworks/svelte",
+    title: "C++",
+    icon: "fa-brands:cuttlefish",
     url: "https://svelte.dev/",
   },
   {
-    title: "Vue",
-    icon: "frameworks/vue",
-    url: "https://vuejs.org/",
-  },
-  {
-    title: "Solid",
-    icon: "frameworks/solid",
+    title: "MATLAB",
+    icon: "fa-brands:wpforms",
     url: "https://www.solidjs.com/",
   },
   {
-    title: "Lit",
-    icon: "frameworks/lit",
+    title: "ARM64",
+    icon: "fa-brands:android",
+    url: "https://vuejs.org/",
+  },
+  {
+    title: "HTML/CSS",
+    icon: "fa-brands:html5",
     url: "https://lit.dev/",
   },
 ];
 
 const platforms: Array<CompatibilityItem> = [
   {
-    title: "Netlify",
-    icon: "platforms/netlify",
-    url: "https://www.netlify.com/",
-  },
-  {
-    title: "Vercel",
-    icon: "platforms/vercel",
-    url: "https://vercel.com/",
-  },
-  {
-    title: "Cloudflare",
-    icon: "fa-brands:cloudflare",
-    url: "https://pages.cloudflare.com/",
-  },
-  {
-    title: "Render",
-    icon: "platforms/render",
-    url: "https://render.com/",
-  },
-  {
     title: "GitHub",
     icon: "fa-brands:github",
     url: "https://pages.github.com/",
   },
   {
+    title: "Git",
+    icon: "fa-brands:git",
+    url: "https://docs.gitlab.com/ee/user/project/pages/",
+  },
+  {
     title: "GitLab",
     icon: "fa-brands:gitlab",
     url: "https://docs.gitlab.com/ee/user/project/pages/",
+  },
+  {
+    title: "Linux",
+    icon: "fa-brands:linux",
+    url: "https://docs.gitlab.com/ee/user/project/pages/",
+  },
+  {
+    title: "Windows",
+    icon: "fa-brands:windows",
+    url: "https://render.com/",
+  },
+  {
+    title: "Apple",
+    icon: "fa-brands:apple",
+    url: "https://pages.github.com/",
   },
 ];
 ---
@@ -78,12 +78,12 @@ const platforms: Array<CompatibilityItem> = [
   </Fragment>
   <CompatibilityList
     items={frameworks}
-    title="Frameworks"
+    title="Languages & Frameworks"
     url="https://docs.astro.build/core-concepts/framework-components/"
   />
   <CompatibilityList
     items={platforms}
-    title="Platforms"
+    title="Technologies & Operating Systems"
     url="https://docs.astro.build/guides/deploy/"
   />
 </ContentSection>
