@@ -29,21 +29,21 @@ const links: Array<FooterLink> = [
     description: "YouTube",
     icon: "fa-brands:youtube",
   },
-  {
-    url: "https://www.facebook.com/profile.php?id=100016601955990",
-    description: "Facebook",
-    icon: "fa-brands:facebook-square",
-  },
-  {
-    url: "https://discordapp.com/users/218854936539037697",
-    description: "Astro on Discord",
-    icon: "fa-brands:discord",
-  },
-  {
-    url: "https://open.spotify.com/user/n9cckn20twtn2b5a3zhu0bme7",
-    description: "Spotify",
-    icon: "fa-brands:spotify",
-  }
+  // {
+  //   url: "https://www.facebook.com/profile.php?id=100016601955990",
+  //   description: "Facebook",
+  //   icon: "fa-brands:facebook-square",
+  // },
+  // {
+  //   url: "https://discordapp.com/users/218854936539037697",
+  //   description: "Astro on Discord",
+  //   icon: "fa-brands:discord",
+  // },
+  // {
+  //   url: "https://open.spotify.com/user/n9cckn20twtn2b5a3zhu0bme7",
+  //   description: "Spotify",
+  //   icon: "fa-brands:spotify",
+  // }
 ];
 ---
 
@@ -51,7 +51,7 @@ const links: Array<FooterLink> = [
   <div class="absolute inset-0 overflow-hidden opacity-40">
     <HeroImage />
   </div>
-  <ul class="relative grid grid-cols-4 gap-7 sm:grid-cols-8 justify-center items-center">
+  <ul class="relative grid grid-cols-4 gap-7 sm:grid-cols-5 justify-center items-center">
     {
       links.map((link) => (
         <li>
