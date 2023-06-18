@@ -8,16 +8,12 @@ const navItems: Array<NavItem> = [
   { title: "Experinces", url: "#experinces" },
   { title: "Skills", url: "#skills" },
   { title: "Projects", url: "#projects" },
-  { title: "Contact", url: "#contact" },
 ];
 ---
 
-<header
-  id="page-header"
-  class="absolute bottom-0 z-20 flex w-full items-center justify-between border-b border-transparent px-8 py-4 text-white"
->
+<header id="page-header" class="absolute bottom-0 z-20 flex w-full items-center justify-between border-b border-transparent px-8 py-4 text-white">
   <a class="flex items-center gap-3 hover:!text-default" href="#">
-    <h1 class="sr-only">Astro</h1>
+    <h1 class="sr-only">Kevin</h1>
     <Icon name="logomark" class="h-10" />
     <Icon name="wordmark" class="hidden h-4 sm:block" />
   </a>
@@ -132,7 +128,9 @@ const navItems: Array<NavItem> = [
 <style>
   .fixed-header {
     @apply fixed bottom-auto top-0;
-    @apply border-default bg-default text-default;
+    @apply border-default text-default;
+    backdrop-filter: blur(10px); /* Apply the blur effect */
+    background-color: rgba(17,24,39, 0.3); /* Optional: Set a semi-transparent background color */
   }
   .modal.is-open {
     @apply block;
