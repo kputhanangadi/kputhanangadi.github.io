@@ -6,7 +6,7 @@ This is the repository for my personal site, which was built with:
 - [Javascript](https://www.javascript.com/)
 - [HTML/CSS](https://www.w3schools.com/html/html_css.asp)
 
-This website is hosted on teh following platforms:
+This website is hosted on the following platforms:
 - [Firebase](https://firebase.google.com/)
 - [Github Pages](https://pages.github.com/)
 
