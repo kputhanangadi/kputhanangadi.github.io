@@ -24,11 +24,8 @@ const sizes = "(min-width: 640px) 42vw, 67vw";
         <span class="text-6xl">
           Hi, I'm
         </span>
-        <span class="gradient-text font-extrabold tracking-tighter text-9xl">
+        <span id = "text" class="gradient-text font-extrabold tracking-tighter text-9xl">
           Kevin Puthanangadi
-        </span>
-        <span class="text-6xl">
-          .
         </span>
       </div>
       <!-- <div class="text-4xl text-center font-bold tracking-tight text-white sm:text-5xl">
@@ -50,6 +47,55 @@ const sizes = "(min-width: 640px) 42vw, 67vw";
     </div> -->
   </div>
 </section>
+
+<script>
+  // function([string1, string2],target id,[color1,color2])    
+ consoleText(['Kevin Puthanangadi', 'Studying Engineering @ UBC', 'Looking Foward '], 'text',[]);
+
+function consoleText(words:any, id:any, colors: any) {
+  if (colors === undefined) colors = [];
+  var visible = true;
+  var con = document.getElementById('console') as HTMLElement;
+  var letterCount = 1;
+  var x = 1;
+  var waiting = false;
+  var target = document.getElementById(id) as HTMLElement;
+  target.setAttribute('style', 'color:' + colors[0])
+
+    window.setInterval(function() {
+    if (letterCount === 0 && waiting === false) {
+      waiting = true;
+      target.innerHTML = words[0].substring(0, letterCount) + '<span class="cursor">|</span>';
+      window.setTimeout(function() {
+        var usedColor = colors.shift();
+        colors.push(usedColor);
+        var usedWord = words.shift();
+        words.push(usedWord);
+        x = 1;
+        target.setAttribute('style', 'color:' + colors[0]);
+        letterCount += x;
+        waiting = false;
+      }, 1000)
+    } else if (letterCount === words[0].length + 1 && waiting === false) {
+      waiting = true;
+      window.setTimeout(function() {
+        x = -1;
+        letterCount += x;
+        waiting = false;
+      }, 1000)
+    } else if (waiting === false) {
+      target.innerHTML = words[0].substring(0, letterCount) + '<span class="cursor">|</span>';
+      letterCount += x;
+    }
+  }, 120);
+
+  window.setInterval(function() {
+    var cursor = document.querySelector('.cursor') as any;
+    cursor.style.opacity = (visible ? 0 : 1);
+    visible = !visible;
+  }, 400);
+}
+</script>
 
 <noscript>
   <style>
@@ -86,5 +132,22 @@ const sizes = "(min-width: 640px) 42vw, 67vw";
     #splash-bg-fallback {
       @apply block;
     }
+
+  .cursor {
+  animation: blink 0.8s infinite;
+  color: rgba(255, 255, 255, 0.5); /* Set the color to semi-transparent white */
+  }
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
   }
 </style>
