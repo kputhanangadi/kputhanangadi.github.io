@@ -47,7 +47,7 @@ const links: Array<FooterLink> = [
 ];
 ---
 
-<footer class="relative flex h-60 items-center justify-center" id="contact">
+<footer class="relative flex flex-col h-60 items-center justify-center" id="contact">
   <div class="absolute inset-0 overflow-hidden opacity-40">
     <HeroImage />
   </div>
@@ -66,5 +66,9 @@ const links: Array<FooterLink> = [
       ))
     }
   </ul>
+  <div class="text-center text-gray-500 text-sm mt-6">
+    <p>&copy; {new Date().getFullYear()} Kevin Puthanangadi. All rights reserved.</p>
+  </div>
 </footer>
+
 
