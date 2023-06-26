@@ -8,11 +8,11 @@ const sites = await getShowcase();
 
 <ContentSection title="PROJECTS" id="projects">
   <Fragment slot="lead">
-    Below are some of my <span class="text-primary">personal projects</span> ranging from autonomous tech to this website. View the source code on my{" "}
+    Below are some <span class="text-primary">personal projects</span> that I have created. Ranging from autonomous tech to this <span class="text-primary">custom made website</span>. View the source code on my{" "}
     <span class="text-primary">Github</span> portfolio, or watch a short demo on <span class="text-primary">Youtube</span>.{" "}
   </Fragment>
   <div class="max-w-6xl space-y-2">
-    <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
+    <div class="grid grid-cols-2 gap-4 md:grid-cols-2 lg:grid-cols-2">
       {sites.map((site) => <ShowcaseCard site={site} />)}
     </div>
     <!-- <p class="text-right text-sm">
